@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="PC100" name="ParkTest" tests="7" time="0.016" timestamp="2012-12-20T13:20:35">
+<testsuite errors="0" failures="0" hostname="PC100" name="ParkTest" tests="7" time="0.0" timestamp="2012-12-20T14:12:25">
   <properties />
   <testcase classname="ParkTest" name="park_no_empty_space" time="0.0" />
   <testcase classname="ParkTest" name="get_car_vid_invalid_ticket" time="0.0" />

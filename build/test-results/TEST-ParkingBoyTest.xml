@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="PC100" name="ParkingBoyTest" tests="7" time="0.062" timestamp="2012-12-20T13:20:35">
+<testsuite errors="0" failures="0" hostname="PC100" name="ParkingBoyTest" tests="7" time="0.078" timestamp="2012-12-20T14:12:25">
   <properties />
-  <testcase classname="ParkingBoyTest" name="get_car_valid_ticket" time="0.015" />
-  <testcase classname="ParkingBoyTest" name="get_car_invalid_ticket" time="0.0" />
+  <testcase classname="ParkingBoyTest" name="get_car_valid_ticket" time="0.0" />
+  <testcase classname="ParkingBoyTest" name="get_car_invalid_ticket" time="0.016" />
   <testcase classname="ParkingBoyTest" name="park_one_empty_one_full_parkingLots" time="0.0" />
   <testcase classname="ParkingBoyTest" name="park_have_empty_spaces" time="0.0" />
   <testcase classname="ParkingBoyTest" name="get_car_two_empty_parkingLots" time="0.0" />

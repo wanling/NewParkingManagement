@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="PC100" name="ParkingManagerTest" tests="10" time="0.0" timestamp="2012-12-20T13:20:35">
+<testsuite errors="0" failures="0" hostname="PC100" name="ParkingManagerTest" tests="10" time="0.015" timestamp="2012-12-20T14:12:25">
   <properties />
-  <testcase classname="ParkingManagerTest" name="park_by_boy_with_empty_spaces" time="0.0" />
+  <testcase classname="ParkingManagerTest" name="park_by_boy_with_empty_spaces" time="0.015" />
   <testcase classname="ParkingManagerTest" name="park_by_manager_with_all_full" time="0.0" />
   <testcase classname="ParkingManagerTest" name="park_by_manager_with_all_empty" time="0.0" />
   <testcase classname="ParkingManagerTest" name="get_via_invalid_ticket" time="0.0" />

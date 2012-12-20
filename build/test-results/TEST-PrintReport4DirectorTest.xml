@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="PC100" name="PrintReport4DirectorTest" tests="3" time="0.015" timestamp="2012-12-20T13:20:35">
+<testsuite errors="0" failures="0" hostname="PC100" name="PrintReport4DirectorTest" tests="3" time="0.0" timestamp="2012-12-20T14:12:25">
   <properties />
-  <testcase classname="PrintReport4DirectorTest" name="print_ParkingManager" time="0.015" />
+  <testcase classname="PrintReport4DirectorTest" name="print_ParkingManager" time="0.0" />
   <testcase classname="PrintReport4DirectorTest" name="print_ParkingBoy" time="0.0" />
   <testcase classname="PrintReport4DirectorTest" name="print_ParkingLot" time="0.0" />
   <system-out><![CDATA[ParkingManager{
