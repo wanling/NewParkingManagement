@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="PC100" name="ParkingSmartBoyTest" tests="7" time="0.0" timestamp="2012-12-20T13:20:35">
+  <properties />
+  <testcase classname="ParkingSmartBoyTest" name="park_both_have_empty_spaces_with_superSmart" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="get_car_with_two_empty_parkingLots" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="park_both_have_empty_spaces_with_smart" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="get_car_via_valid_ticket" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="park_two_empty_parkingLots" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="park_two_full_parkingLots" time="0.0" />
+  <testcase classname="ParkingSmartBoyTest" name="get_car_via_invalid_ticket" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
