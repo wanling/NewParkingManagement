@@ -74,16 +74,27 @@ public class ParkingBoy implements  PrintReport{
         return  num;
     }
 
+//    public String toString(String blanks) {
+//        StringBuilder sb = new StringBuilder();
+//        for (ParkingLot lot : parkingLots){
+//            sb.append(blanks+blanks+lot.toString()+"\n") ;
+//        }
+//        return  "ParkingBoy{\n" +
+//                 blanks+"BoyNO: " + BoyNO +"\n"+
+//                 blanks+"parkingLots:{ \n" + sb.toString() + "}\n" +
+//                 blanks+"Total车位数 ：" + getTotalSpaces() +  "\n" +
+//                 blanks+"Total空位数 ：" + getTotalEmptySpaces() + "\n" +
+//                 '}';
+//    }
+
     public String toString(String blanks) {
         StringBuilder sb = new StringBuilder();
         for (ParkingLot lot : parkingLots){
-            sb.append(blanks+blanks+lot.toString()+"\n") ;
+            sb.append(lot.toString("\t")+"\n") ;
         }
-        return  "ParkingBoy{\n" +
-                 blanks+"BoyNO: " + BoyNO +"\n"+
-                 blanks+"parkingLots:{ \n" + sb.toString() + "}\n" +
-                 blanks+"Total车位数 ：" + getTotalSpaces() +  "\n" +
-                 blanks+"Total空位数 ：" + getTotalEmptySpaces() + "\n" +
-                 '}';
+        return "停车仔编号： " + BoyNO +"\n"+
+                sb.toString() + "\n" +
+                blanks+"Total车位数 ：" + getTotalSpaces() +  "\n" +
+                blanks+"Total空位数 ：" + getTotalEmptySpaces() + "\n" ;
     }
 }

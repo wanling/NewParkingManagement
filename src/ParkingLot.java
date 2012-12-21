@@ -58,16 +58,27 @@ public class ParkingLot implements PrintReport{
         return this.capacity - this.parkMap.size();  //To change body of implemented methods use File | Settings | File Templates.
     }
 
+//    @Override
+//    public String toString() {
+//        return "ParkingLot{" +
+//                "停车场编号： " + NO +
+//                "\t车位数 ： " + capacity +
+//                "\t空位数 ： " + (capacity - parkMap.size()) +
+//                 "\tTotal车位数 ：" + getTotalSpaces() +
+//                 "\tTotal空位数 ：" + getTotalEmptySpaces() +
+//                '}';
+//    }
+
     @Override
     public String toString() {
-        return "ParkingLot{" +
-                "停车场编号： " + NO +
-                "\t车位数 ： " + capacity +
-                "\t空位数 ： " + (capacity - parkMap.size()) +
-                 "\tTotal车位数 ：" + getTotalSpaces() +
-                 "\tTotal空位数 ：" + getTotalEmptySpaces() +
-                '}';
+        return  "停车场编号： " + NO +"\n"+
+                "\t车位数 ： " + getTotalSpaces() +"\n"+
+                "\t空位数 ： " + getTotalEmptySpaces() +"\n";
     }
 
-
+    public String toString(String blanks) {
+        return  blanks+"停车场编号： " + NO +"\n"+
+                 blanks+"\t车位数 ： " + getTotalSpaces() +"\n"+
+                 blanks+"\t空位数 ： " + getTotalEmptySpaces() +"\n";
+    }
 }
