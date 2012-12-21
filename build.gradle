@@ -1,12 +1,14 @@
 apply plugin: 'java'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.7
 
-archiveBaseName = 'parkingLotsModel'
+archiveBaseName = 'parkinglotsModel'
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': 1.0
+        archiveName = 'parkinglotsModel.jar'
+        attributes 'Implementation-Title': 'Parking App', 'Implementation-Version': 1.0 ,'Implementation-Name': 'parkinglotsModel'
     }
 }
 
