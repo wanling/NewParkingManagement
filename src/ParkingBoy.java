@@ -53,7 +53,7 @@ public class ParkingBoy implements  PrintReport{
 
     @Override
     public void printInfo() {
-        System.out.println(toString("\t"));
+        System.out.println(toString(""));
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -90,11 +90,11 @@ public class ParkingBoy implements  PrintReport{
     public String toString(String blanks) {
         StringBuilder sb = new StringBuilder();
         for (ParkingLot lot : parkingLots){
-            sb.append(lot.toString("\t")+"\n") ;
+            sb.append(lot.toString(blanks+"\t")) ;
         }
-        return "停车仔编号： " + BoyNO +"\n"+
-                sb.toString() + "\n" +
-                blanks+"Total车位数 ：" + getTotalSpaces() +  "\n" +
-                blanks+"Total空位数 ：" + getTotalEmptySpaces() + "\n" ;
+        return blanks+"停车仔编号： " + BoyNO +"\n"+
+                sb.toString()  +
+                blanks+"\tTotal车位数 ： " + getTotalSpaces() +  "\n" +
+                blanks+"\tTotal空位数 ： " + getTotalEmptySpaces() + "\n" ;
     }
 }

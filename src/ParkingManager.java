@@ -53,7 +53,7 @@ public class ParkingManager implements PrintReport{
 
     @Override
     public void printInfo() {
-        System.out.println(toString("\t"));
+        System.out.println(toString(""));
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -80,18 +80,16 @@ public class ParkingManager implements PrintReport{
     public String toString(String blanks) {
         StringBuilder lot_sb = new StringBuilder();
         for (ParkingLot lot : parkingLotList){
-            lot_sb.append(blanks+lot.toString()+"\n");
+            lot_sb.append(lot.toString(blanks+"\t"));
         }
         StringBuilder boy_sb = new StringBuilder();
         for (ParkingBoy boy : parkingBoyList){
-            boy_sb.append(blanks+boy.toString(blanks)+"\n");
+            boy_sb.append(boy.toString(blanks+"\t")+"\n");
         }
-        return "ParkingManager{\n" +
-                "ManagerID: " + ManagerID + "\n"+
-                "parkingLotList: { \n" + lot_sb.toString() +"}\n"+
-                "parkingBoyList: { \n" + boy_sb.toString() +"}\n"+
-                "Total车位数 ：" + getTotalSpaces() +  "\n" +
-                "Total空位数 ：" + getTotalEmptySpaces() + "\n" +
-                '}';
+        return "停车场经理编号： " + ManagerID + "\n"+
+                 lot_sb.toString() +"\n"+
+                 boy_sb.toString() +
+                "\tTotal车位数 ： " + getTotalSpaces() +  "\n" +
+                "\tTotal空位数 ： " + getTotalEmptySpaces() + "\n" ;
     }
 }

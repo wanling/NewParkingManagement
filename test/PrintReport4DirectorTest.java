@@ -1,3 +1,4 @@
+import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -72,7 +73,9 @@ public class PrintReport4DirectorTest {
      */
     @Test
     public void print_ParkingLot(){
-        lot1.printInfo();
+        String lotReport = "停车场编号： 1\n\t车位数 ： 50\n\t空位数 ： 40\n";
+        Assert.assertEquals(lotReport,lot1.toString(""));
+      //  lot1.printInfo();
     }
 
     /**
@@ -80,7 +83,9 @@ public class PrintReport4DirectorTest {
      */
     @Test
     public void print_ParkingBoy(){
-        Tom.printInfo();
+        String boyReport = "停车仔编号： 1\n\t停车场编号： 2\n\t\t车位数 ： 50\n\t\t空位数 ： 30\n\t停车场编号： 3\n\t\t车位数 ： 50\n\t\t空位数 ： 50\n\tTotal车位数 ： 100\n\tTotal空位数 ： 80\n" ;
+        Assert.assertEquals(boyReport,Tom.toString(""));
+       // Tom.printInfo();
     }
 
     /**
@@ -88,6 +93,8 @@ public class PrintReport4DirectorTest {
      */
     @Test
     public void print_ParkingManager(){
-        parkingManager.printInfo();
+        String managementReport = "停车场经理编号： 0\n\t停车场编号： 1\n\t\t车位数 ： 50\n\t\t空位数 ： 40\n\n\t停车仔编号： 1\n\t\t停车场编号： 2\n\t\t\t车位数 ： 50\n\t\t\t空位数 ： 30\n\t\t停车场编号： 3\n\t\t\t车位数 ： 50\n\t\t\t空位数 ： 50\n\t\tTotal车位数 ： 100\n\t\tTotal空位数 ： 80\n\n\t停车仔编号： 2\n\t\t停车场编号： 4\n\t\t\t车位数 ： 50\n\t\t\t空位数 ： 30\n\t\t停车场编号： 5\n\t\t\t车位数 ： 50\n\t\t\t空位数 ： 50\n\t\tTotal车位数 ： 100\n\t\tTotal空位数 ： 80\n\n\tTotal车位数 ： 250\n\tTotal空位数 ： 200\n";
+        Assert.assertEquals(managementReport, parkingManager.toString(""));
+      //  parkingManager.printInfo();
     }
 }

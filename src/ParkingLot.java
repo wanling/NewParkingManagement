@@ -45,7 +45,7 @@ public class ParkingLot implements PrintReport{
     @Override
     public void printInfo() {
         //To change body of implemented methods use File | Settings | File Templates.
-        System.out.println(toString());
+        System.out.println(toString(""));
     }
 
     @Override
@@ -69,14 +69,7 @@ public class ParkingLot implements PrintReport{
 //                '}';
 //    }
 
-    @Override
-    public String toString() {
-        return  "停车场编号： " + NO +"\n"+
-                "\t车位数 ： " + getTotalSpaces() +"\n"+
-                "\t空位数 ： " + getTotalEmptySpaces() +"\n";
-    }
-
-    public String toString(String blanks) {
+   public String toString(String blanks) {
         return  blanks+"停车场编号： " + NO +"\n"+
                  blanks+"\t车位数 ： " + getTotalSpaces() +"\n"+
                  blanks+"\t空位数 ： " + getTotalEmptySpaces() +"\n";
