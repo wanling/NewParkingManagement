@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="PC100" name="ParkingSmartBoyTest" tests="7" time="0.016" timestamp="2012-12-20T14:12:25">
+<testsuite errors="0" failures="0" hostname="PC104" name="ParkingSmartBoyTest" tests="7" time="0.0" timestamp="2012-12-21T03:34:21">
   <properties />
   <testcase classname="ParkingSmartBoyTest" name="park_both_have_empty_spaces_with_superSmart" time="0.0" />
   <testcase classname="ParkingSmartBoyTest" name="get_car_with_two_empty_parkingLots" time="0.0" />
